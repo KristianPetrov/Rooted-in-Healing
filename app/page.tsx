@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import OrganizationShowcase from "./components/OrganizationShowcase";
 
 export default function Home ()
 {
@@ -39,6 +40,9 @@ export default function Home ()
             </a>
             <a className="hover:text-foreground" href="#services">
               Support
+            </a>
+            <a className="hover:text-foreground" href="#organizations">
+              Organizations
             </a>
             <a className="hover:text-foreground" href="#process">
               Process
@@ -308,6 +312,43 @@ export default function Home ()
           </div>
         </section>
 
+        <section id="organizations" className="border-t border-border/70">
+          <div className="mx-auto max-w-6xl px-6 py-16">
+            <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+              <div>
+                <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+                  Organizations we work with
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+                  We collaborate with community partners whose work strengthens
+                  healing, belonging, and practical support.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10">
+              <OrganizationShowcase
+                name="Set Free Anaheim"
+                href="https://www.setfreeanaheim.com/"
+                images={[
+                  {
+                    src: "/godfather.JPG",
+                    alt: "Set Free Anaheim community photo",
+                  },
+                  {
+                    src: "/phil-sunday-setfree-hat.jpg",
+                    alt: "Set Free Anaheim event photo (hat)",
+                  },
+                  {
+                    src: "/phil-sunday-magic-side.jpg",
+                    alt: "Set Free Anaheim event photo (magic side)",
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </section>
+
         <section id="process" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
@@ -515,6 +556,9 @@ export default function Home ()
             </a>
             <a className="hover:text-foreground" href="#services">
               Support
+            </a>
+            <a className="hover:text-foreground" href="#organizations">
+              Organizations
             </a>
             <a className="hover:text-foreground" href="#process">
               Process
