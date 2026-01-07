@@ -17,20 +17,17 @@ export default function Home ()
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link
             href="/"
-            className="group inline-flex items-center gap-3 font-semibold tracking-tight"
+            className="group inline-flex items-center tracking-tight"
           >
-            <span className="relative h-9 w-9 overflow-hidden rounded-xl bg-accent/10 ring-1 ring-accent/30">
+            <span className="relative h-10 w-[190px] sm:w-[230px] md:w-[250px]">
               <Image
-                src="/rooted-in-healing-logo.png"
-                alt="Rooted in Healing logo"
+                src="/rooted-in-healing-text-logo.png"
+                alt="Rooted in Healing"
                 fill
                 priority
-                sizes="36px"
-                className="object-cover object-top"
+                sizes="(max-width: 640px) 190px, (max-width: 768px) 230px, 250px"
+                className="object-contain object-left"
               />
-            </span>
-            <span className="text-base">
-              Rooted <span className="text-muted">in</span> Healing
             </span>
           </Link>
 
