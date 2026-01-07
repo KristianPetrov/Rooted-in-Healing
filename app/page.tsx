@@ -461,9 +461,7 @@ export default function Home ()
                       >
                         +1 (714) 805-1963
                       </a>
-                      <p className="mt-3 text-xs text-muted">
-                        Typical response: 1–2 business days.
-                      </p>
+                  
                     </div>
                     <a
                       href="mailto:rootedinhealing657@gmail.com?subject=Connect%20-%20Rooted%20in%20Healing"
