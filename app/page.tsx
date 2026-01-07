@@ -75,7 +75,7 @@ export default function Home ()
           </div>
 
           <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-            <div className=" flex justify-center md:mb-2">
+            <div className="mb-1.5 flex justify-center md:mb-2">
               <div className="hero-logo-candleglow w-full max-w-116 md:max-w-lg lg:max-w-160">
                 <Image
                   src="/rooted-in-healing-logo.png"
@@ -117,18 +117,24 @@ export default function Home ()
                   </a>
                 </div>
 
-                <dl className="mt-10 grid max-w-xl grid-cols-3 gap-6 text-sm text-center">
+                <dl className="mt-10 mx-auto grid max-w-xl grid-cols-2 gap-3 text-sm text-center sm:grid-cols-3 sm:gap-6">
                   <div className="rounded-2xl border border-border/70 bg-card/60 p-4">
                     <dt className="text-muted">Support</dt>
-                    <dd className="mt-1 font-medium">Elders &amp; ceremony</dd>
+                    <dd className="mt-1 text-pretty font-medium leading-snug">
+                      Elders &amp; ceremony
+                    </dd>
                   </div>
                   <div className="rounded-2xl border border-border/70 bg-card/60 p-4">
                     <dt className="text-muted">Rooted in</dt>
-                    <dd className="mt-1 font-medium">Community</dd>
+                    <dd className="mt-1 text-pretty font-medium leading-snug">
+                      Community
+                    </dd>
                   </div>
-                  <div className="rounded-2xl border border-border/70 bg-card/60 p-4">
+                  <div className="col-span-2 w-full max-w-[calc((100%-0.75rem)/2)] justify-self-center rounded-2xl border border-border/70 bg-card/60 p-4 sm:col-span-1 sm:max-w-none">
                     <dt className="text-muted">Balance</dt>
-                    <dd className="mt-1 font-medium">Mind • Body • Spirit</dd>
+                    <dd className="mt-1 text-pretty font-medium leading-snug">
+                      Mind • Body • Spirit
+                    </dd>
                   </div>
                 </dl>
               </div>
@@ -337,6 +343,31 @@ export default function Home ()
                   }, { src: "/sunday-phil-dressed-up.png", alt: "Set Free Anaheim Sunday and Phil event photo (dressed up)" }
                 ]}
               />
+
+              <div className="mt-10">
+                <OrganizationShowcase
+                  name="Footprints In The Sand 2 Recovery"
+                  href="https://www.footprintsinthesand2recovery.com/"
+                  logo={{
+                    src: "/footprints-in-the-sand-minimal-logo.png",
+                    alt: "Footprints In The Sand 2 Recovery logo",
+                  }}
+                  images={[
+                    {
+                      src: "/footprints-building.png",
+                      alt: "Footprints In The Sand 2 Recovery building",
+                    },
+                    {
+                      src: "/footprints-dining.jpg",
+                      alt: "Footprints In The Sand 2 Recovery dining area",
+                    },
+                    {
+                      src: "/footprints-living-area.jpg",
+                      alt: "Footprints In The Sand 2 Recovery living area",
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </section>

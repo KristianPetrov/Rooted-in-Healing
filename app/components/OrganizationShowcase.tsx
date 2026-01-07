@@ -15,7 +15,7 @@ type ShowcaseLogo = {
 
 type OrganizationShowcaseProps = {
     name: string;
-    href: string;
+    href?: string;
     logo?: ShowcaseLogo;
     images: ShowcaseImage[];
 };
@@ -56,7 +56,7 @@ export default function OrganizationShowcase ({
                 <div>
                     <p className="text-sm font-medium text-foreground">{name}</p>
                     <p className="mt-1 text-sm text-muted">
-                        Tap the slideshow to visit their site.
+                        {href ? "Tap the slideshow to visit their site." : "Website link coming soon."}
                     </p>
                 </div>
                 {/* <a
@@ -75,14 +75,18 @@ export default function OrganizationShowcase ({
                 aria-roledescription="carousel"
                 aria-label={`${name} photo slideshow`}
             >
-                {/* Click-through overlay (buttons sit above it) */}
-                <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute inset-0 z-10"
-                    aria-label={`Open ${name} website (opens in a new tab)`}
-                />
+                {href ? (
+                    <>
+                        {/* Click-through overlay (buttons sit above it) */}
+                        <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute inset-0 z-10"
+                            aria-label={`Open ${name} website (opens in a new tab)`}
+                        />
+                    </>
+                ) : null}
 
                 {logo ? (
                     <div className="pointer-events-none absolute left-3 top-3 z-20">
