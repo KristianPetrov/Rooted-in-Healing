@@ -95,12 +95,12 @@ export default function Home ()
                   wellness.
                 </h1>
 
-                <p className="mt-5 mx-auto max-w-2xl text-pretty text-base leading-relaxed text-center text-muted md:text-lg">
+                {/* <p className="mt-5 mx-auto max-w-2xl text-pretty text-base leading-relaxed text-center text-muted md:text-lg">
                   Rooted in Healing is an Indigenous-led organization dedicated
                   to strengthening the Red Road Journeys of our relatives—walking
                   alongside our people through ceremony, community, traditional
                   teachings, and connection to the land.
-                </p>
+                </p> */}
 
                 <div className="mt-8 flex flex-nowrap gap-3">
                   <a
@@ -177,14 +177,13 @@ export default function Home ()
                 <div className="mt-6 rounded-3xl border border-border/70 bg-card p-6">
                   <p className="text-sm font-medium">Your next conversation</p>
                   <p className="mt-2 text-sm text-muted">
-                    Share what you’re seeking. We’ll listen, honor your story,
-                    and help identify culturally rooted supports and next steps.
+                    Share what you’re seeking. We will listen, honor your story, and assist in every way possible to support your vision towards recovery.
                   </p>
                   <a
                     href="#contact"
                     className="mt-4 inline-flex w-full items-center justify-center rounded-2xl border border-border/80 bg-background px-4 py-2.5 text-sm font-medium text-foreground hover:border-border"
                   >
-                    Reach out to begin
+                    Reach out anytime
                   </a>
                 </div>
               </aside>
@@ -197,10 +196,7 @@ export default function Home ()
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               Vision &amp; Mission
             </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
-              Rooted in tradition. Restoring balance in mind, body, spirit, and
-              connection to the land.
-            </p>
+
 
             <div className="mt-10 grid gap-5 md:grid-cols-2">
               <div className="rounded-3xl border border-border/70 bg-card p-6">
@@ -211,8 +207,7 @@ export default function Home ()
                   Where relatives can return to their roots, reclaim their
                   identity and walk the red road of wellness, supported by
                   elders, ceremony, community, and the wisdom of Indigenous
-                  healing practices rooted in tradition and restoring balance in
-                  mind, body, spirit, and connection to the land.
+                  healing practices Rooted in Tradition and restoring balance Emotionally, Mentally, Physically and Spiritually.
                 </p>
               </div>
 
@@ -452,22 +447,13 @@ export default function Home ()
                   ))}
                 </div>
 
-                <div className="mt-8 rounded-3xl border border-border/70 bg-card p-6">
-                  <p className="text-sm font-medium">
-                    What “rooted in culture” means
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
-                    Healing supported by elders, ceremony, community, and the
-                    wisdom of Indigenous healing practices—restoring balance in
-                    mind, body, spirit, and connection to the land.
-                  </p>
-                </div>
+
               </div>
             </div>
           </div>
         </section>
 
-        {/* <section className="border-t border-border/70">
+        <section className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               Grounded, community-centered support
@@ -508,7 +494,7 @@ export default function Home ()
               ))}
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section id="contact" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
