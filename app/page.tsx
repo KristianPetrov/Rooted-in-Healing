@@ -95,7 +95,7 @@ export default function Home ()
                   wellness.
                 </h1>
 
-                <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-center text-muted md:text-lg">
+                <p className="mt-5 mx-auto max-w-2xl text-pretty text-base leading-relaxed text-center text-muted md:text-lg">
                   Rooted in Healing is an Indigenous-led organization dedicated
                   to strengthening the Red Road Journeys of our relatives—walking
                   alongside our people through ceremony, community, traditional
