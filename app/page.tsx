@@ -117,7 +117,7 @@ export default function Home ()
                   </a>
                 </div>
 
-                <dl className="mt-10 mx-auto grid max-w-xl grid-cols-2 gap-3 text-sm text-center sm:grid-cols-3 sm:gap-6">
+                {/* <dl className="mt-10 mx-auto grid max-w-xl grid-cols-2 gap-3 text-sm text-center sm:grid-cols-3 sm:gap-6">
                   <div className="rounded-2xl border border-border/70 bg-card/60 p-4">
                     <dt className="text-muted">Support</dt>
                     <dd className="mt-1 text-pretty font-medium leading-snug">
@@ -136,7 +136,7 @@ export default function Home ()
                       Mind • Body • Spirit
                     </dd>
                   </div>
-                </dl>
+                </dl> */}
               </div>
 
               <aside>
