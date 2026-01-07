@@ -363,6 +363,31 @@ export default function Home ()
                   ]}
                 />
               </div>
+
+              <div className="mt-10">
+                <OrganizationShowcase
+                  name="Sacred Path"
+                  href="https://www.sacredpath.org/"
+                  logo={{
+                    src: "/sacred-path-logo.svg",
+                    alt: "Sacred Path logo",
+                  }}
+                  images={[
+                    {
+                      src: "/sacred-path-native-couple.jpg",
+                      alt: "Sacred Path photo (native couple)",
+                    },
+                    {
+                      src: "/sacred-path-still.jpg",
+                      alt: "Sacred Path photo (still)",
+                    },
+                    {
+                      src: "/sacred-path-flute-woman.jpg",
+                      alt: "Sacred Path photo (flute woman)",
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </section>
