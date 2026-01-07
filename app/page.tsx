@@ -44,12 +44,6 @@ export default function Home ()
             <a className="hover:text-foreground" href="#organizations">
               Organizations
             </a>
-            <a className="hover:text-foreground" href="#process">
-              Process
-            </a>
-            <a className="hover:text-foreground" href="#focus">
-              Pathways
-            </a>
             <a className="hover:text-foreground" href="#contact">
               Contact
             </a>
@@ -84,52 +78,49 @@ export default function Home ()
           </div>
 
           <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-            <div className="mb-10 flex justify-center md:mb-12">
-              <Image
-                src="/rooted-in-healing-logo.png"
-                alt="Rooted in Healing logo"
-                width={1040}
-                height={1040}
-                priority
-                sizes="(max-width: 768px) 80vw, (max-width: 1024px) 560px, 640px"
-                className="h-auto w-full max-w-116 md:max-w-lg lg:max-w-160"
-              />
+            <div className=" flex justify-center md:mb-2">
+              <div className="hero-logo-candleglow w-full max-w-116 md:max-w-lg lg:max-w-160">
+                <Image
+                  src="/rooted-in-healing-logo.png"
+                  alt="Rooted in Healing logo"
+                  width={1040}
+                  height={1040}
+                  priority
+                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 560px, 640px"
+                  className="h-auto w-full"
+                />
+              </div>
             </div>
-            <div className="grid items-start gap-10 md:grid-cols-12">
-              <div className="relative md:col-span-7">
-                <p className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface px-3 py-1 text-xs text-muted">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                  Indigenous-led healing • Red Road Journeys • Sacred Circle
-                </p>
-
-                <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight md:text-6xl">
+            <div className="flex flex-col items-stretch gap-10">
+              <div className="relative">
+                <h1 className="mt-2 text-balance text-4xl font-semibold tracking-tight text-center md:text-6xl">
                   Return to your roots. Reclaim identity. Walk the Red Road of
                   wellness.
                 </h1>
 
-                <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted md:text-lg">
+                <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-center text-muted md:text-lg">
                   Rooted in Healing is an Indigenous-led organization dedicated
                   to strengthening the Red Road Journeys of our relatives—walking
                   alongside our people through ceremony, community, traditional
                   teachings, and connection to the land.
                 </p>
 
-                <div className="mt-8 flex flex-wrap gap-3">
+                <div className="mt-8 flex flex-nowrap gap-3">
                   <a
                     href="#contact"
-                    className="inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-background shadow-sm ring-1 ring-accent/60 hover:brightness-105"
+                    className="inline-flex min-w-0 flex-1 items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-medium text-center text-background shadow-sm ring-1 ring-accent/60 hover:brightness-105 sm:px-5"
                   >
                     Connect with us
                   </a>
                   <a
                     href="#vision"
-                    className="inline-flex items-center justify-center rounded-full border border-border/80 bg-card px-5 py-2.5 text-sm font-medium text-foreground shadow-sm hover:border-border"
+                    className="inline-flex min-w-0 flex-1 items-center justify-center rounded-full border border-border/80 bg-card px-4 py-2.5 text-sm font-medium text-center text-foreground shadow-sm hover:border-border sm:px-5"
                   >
                     Read our Vision &amp; Mission
                   </a>
                 </div>
 
-                <dl className="mt-10 grid max-w-xl grid-cols-3 gap-6 text-sm">
+                <dl className="mt-10 grid max-w-xl grid-cols-3 gap-6 text-sm text-center">
                   <div className="rounded-2xl border border-border/70 bg-card/60 p-4">
                     <dt className="text-muted">Support</dt>
                     <dd className="mt-1 font-medium">Elders &amp; ceremony</dd>
@@ -145,7 +136,7 @@ export default function Home ()
                 </dl>
               </div>
 
-              <aside className="md:col-span-5">
+              <aside>
                 <div className="rounded-3xl border border-border/70 bg-card p-6 shadow-[0_1px_0_0_rgba(255,255,255,0.04)]">
                   <p className="text-sm font-medium">What we walk alongside</p>
                   <ul className="mt-4 space-y-3 text-sm text-muted">
@@ -241,7 +232,7 @@ export default function Home ()
           </div>
         </section>
 
-        <section id="services" className="border-t border-border/70">
+        {/* <section id="services" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
               <div>
@@ -310,7 +301,7 @@ export default function Home ()
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="organizations" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
@@ -330,6 +321,10 @@ export default function Home ()
               <OrganizationShowcase
                 name="Set Free Anaheim"
                 href="https://www.setfreeanaheim.com/"
+                logo={{
+                  src: "/SETFREELOGOWHITE.png",
+                  alt: "Set Free Anaheim logo",
+                }}
                 images={[
                   {
                     src: "/godfather.JPG",
@@ -342,14 +337,14 @@ export default function Home ()
                   {
                     src: "/phil-sunday-magic-side.jpg",
                     alt: "Set Free Anaheim event photo (magic side)",
-                  },
+                  }, { src: "/sunday-phil-dressed-up.png", alt: "Set Free Anaheim Sunday and Phil event photo (dressed up)" }
                 ]}
               />
             </div>
           </div>
         </section>
 
-        <section id="process" className="border-t border-border/70">
+        {/* <section id="process" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               A simple, grounded way of walking together
@@ -392,7 +387,7 @@ export default function Home ()
               ))}
             </ol>
           </div>
-        </section>
+        </section> */}
 
         <section id="focus" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
@@ -444,7 +439,7 @@ export default function Home ()
           </div>
         </section>
 
-        <section className="border-t border-border/70">
+        {/* <section className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               Grounded, community-centered support
@@ -485,7 +480,7 @@ export default function Home ()
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="contact" className="border-t border-border/70">
           <div className="mx-auto max-w-6xl px-6 py-16">
