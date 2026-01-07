@@ -450,17 +450,23 @@ export default function Home ()
                         Contact
                       </p>
                       <a
-                        href="mailto:hello@rootedinhealing.com"
+                        href="mailto:rootedinhealing657@gmail.com"
                         className="mt-2 block text-sm font-medium text-foreground hover:underline"
                       >
-                        hello@rootedinhealing.com
+                        rootedinhealing657@gmail.com
+                      </a>
+                      <a
+                        href="tel:+17148051963"
+                        className="mt-2 block text-sm font-medium text-foreground hover:underline"
+                      >
+                        +1 (714) 805-1963
                       </a>
                       <p className="mt-3 text-xs text-muted">
                         Typical response: 1–2 business days.
                       </p>
                     </div>
                     <a
-                      href="mailto:hello@rootedinhealing.com?subject=Connect%20-%20Rooted%20in%20Healing"
+                      href="mailto:rootedinhealing657@gmail.com?subject=Connect%20-%20Rooted%20in%20Healing"
                       className="mt-4 inline-flex w-full items-center justify-center rounded-2xl bg-accent px-4 py-2.5 text-sm font-medium text-background ring-1 ring-accent/60 hover:brightness-105"
                     >
                       Email to connect
