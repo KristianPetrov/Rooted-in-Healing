@@ -388,6 +388,35 @@ export default function Home ()
                   ]}
                 />
               </div>
+
+              <div className="mt-10">
+                <OrganizationShowcase
+                  name="True North Recovery"
+                  href="https://truenorthrecoverymt.com/"
+                  logo={{
+                    src: "/true-north-logo-white.png",
+                    alt: "True North Recovery logo",
+                  }}
+                  images={[
+                    {
+                      src: "/true-north-house.webp",
+                      alt: "True North Recovery facility exterior",
+                    },
+                    {
+                      src: "/true-noth-porch.webp",
+                      alt: "True North Recovery porch",
+                    },
+                    {
+                      src: "/true-north-living-room.webp",
+                      alt: "True North Recovery living room",
+                    },
+                    {
+                      src: "/true-north-staircase.webp",
+                      alt: "True North Recovery staircase",
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </section>
