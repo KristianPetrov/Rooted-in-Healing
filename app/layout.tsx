@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Rooted in Healing | Indigenous-led Healing & Red Road Journeys",
   description:
     "Rooted in Healing is an Indigenous-led organization dedicated to strengthening the Red Road Journeys of our relatives through ceremony, community, traditional teachings, and connection to the land.",
+  icons: {
+    icon: "/rooted-in-healing-logo.png",
+    apple: "/rooted-in-healing-logo.png",
+  },
 };
 
 export default function RootLayout ({

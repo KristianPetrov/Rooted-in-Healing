@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home ()
 {
@@ -17,10 +18,14 @@ export default function Home ()
             href="/"
             className="group inline-flex items-center gap-3 font-semibold tracking-tight"
           >
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent/15 ring-1 ring-accent/30">
-              <span
-                aria-hidden="true"
-                className="h-4 w-4 rounded-full bg-accent shadow-[0_0_0_3px_rgba(176,141,87,0.15)]"
+            <span className="relative h-9 w-9 overflow-hidden rounded-xl bg-accent/10 ring-1 ring-accent/30">
+              <Image
+                src="/rooted-in-healing-logo.png"
+                alt="Rooted in Healing logo"
+                fill
+                priority
+                sizes="36px"
+                className="object-cover object-top"
               />
             </span>
             <span className="text-base">
@@ -75,6 +80,17 @@ export default function Home ()
           </div>
 
           <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+            <div className="mb-10 flex justify-center md:mb-12">
+              <Image
+                src="/rooted-in-healing-logo.png"
+                alt="Rooted in Healing logo"
+                width={1040}
+                height={1040}
+                priority
+                sizes="(max-width: 768px) 80vw, (max-width: 1024px) 560px, 640px"
+                className="h-auto w-full max-w-116 md:max-w-lg lg:max-w-160"
+              />
+            </div>
             <div className="grid items-start gap-10 md:grid-cols-12">
               <div className="relative md:col-span-7">
                 <p className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface px-3 py-1 text-xs text-muted">
@@ -461,7 +477,7 @@ export default function Home ()
                       >
                         +1 (714) 805-1963
                       </a>
-                  
+
                     </div>
                     <a
                       href="mailto:rootedinhealing657@gmail.com?subject=Connect%20-%20Rooted%20in%20Healing"
@@ -479,9 +495,20 @@ export default function Home ()
 
       <footer className="border-t border-border/70">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm text-muted">
-            © {new Date().getFullYear()} Rooted in Healing. All rights reserved.
-          </p>
+          <div className="flex items-center gap-3">
+            <span className="relative h-8 w-8 overflow-hidden rounded-lg bg-accent/10 ring-1 ring-accent/25">
+              <Image
+                src="/rooted-in-healing-logo.png"
+                alt="Rooted in Healing logo"
+                fill
+                sizes="32px"
+                className="object-cover object-top"
+              />
+            </span>
+            <p className="text-sm text-muted">
+              © {new Date().getFullYear()} Rooted in Healing. All rights reserved.
+            </p>
+          </div>
           <div className="flex flex-wrap gap-4 text-sm text-muted">
             <a className="hover:text-foreground" href="#vision">
               Vision &amp; Mission
