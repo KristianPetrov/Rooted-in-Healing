@@ -521,17 +521,17 @@ export default function Home ()
                 {
                   quote:
                     "I felt seen and supported. The experience helped me reconnect with who I am and where I come from.",
-                  who: "Relative (anonymous)",
+                  who: "Rvfo Spencer",
                 },
                 {
                   quote:
                     "The support was practical and caring—grounded in community and tradition.",
-                  who: "Community member",
+                  who: "Toya Stewart (Kiowa tribe Oklahoma)",
                 },
                 {
                   quote:
                     "It helped restore balance in mind, body, and spirit—and strengthened my connection to the land.",
-                  who: "Relative (anonymous)",
+                  who: "Oli Turalde (Hawaiian Kingdom)",
                 },
               ].map((t, idx) => (
                 <figure
