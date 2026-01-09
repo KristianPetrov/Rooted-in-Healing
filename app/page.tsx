@@ -91,8 +91,8 @@ export default function Home ()
             <div className="flex flex-col items-stretch gap-10">
               <div className="relative">
                 <h1 className="mt-2 text-balance text-4xl font-semibold tracking-tight text-center md:text-6xl">
-                  Return to your roots. Reclaim identity. Walk the Red Road of
-                  wellness.
+                  Return to your Roots. Reclaim identity. Walk the Red Road of
+                  Wellness.
                 </h1>
 
                 {/* <p className="mt-5 mx-auto max-w-2xl text-pretty text-base leading-relaxed text-center text-muted md:text-lg">
@@ -341,28 +341,34 @@ export default function Home ()
 
               <div className="mt-10">
                 <OrganizationShowcase
-                  name="Footprints In The Sand 2 Recovery"
-                  href="https://www.footprintsinthesand2recovery.com/"
+                  name="Rooted In Tradition"
+                  href="https://www.rootedintradition.org/"
                   logo={{
-                    src: "/footprints-in-the-sand-minimal-logo.png",
-                    alt: "Footprints In The Sand 2 Recovery logo",
+                    src: "/rooted-in-tradition-transparent-logo.png",
+                    alt: "Rooted In Tradition logo",
                   }}
                   images={[
                     {
-                      src: "/footprints-building.png",
-                      alt: "Footprints In The Sand 2 Recovery building",
+                      src: "/rooted-in-tradition-banner.jpg",
+                      alt: "Rooted In Tradition banner",
                     },
                     {
-                      src: "/footprints-dining.jpg",
-                      alt: "Footprints In The Sand 2 Recovery dining area",
+                      src: "/rooted-in-tradition-sunday.jpeg",
+                      alt: "Rooted In Tradition Sunday photo",
                     },
                     {
-                      src: "/footprints-living-area.jpg",
-                      alt: "Footprints In The Sand 2 Recovery living area",
+                      src: "/rooted-in-tradition-toya-sunday-flowers.jpg",
+                      alt: "Rooted In Tradition Toya & Sunday photo (flowers)",
+                    },
+                    {
+                      src: "/rooted-in-tradition-toya-sunday.jpg",
+                      alt: "Rooted In Tradition Toya & Sunday photo",
                     },
                   ]}
                 />
               </div>
+
+
 
               <div className="mt-10">
                 <OrganizationShowcase
@@ -388,7 +394,30 @@ export default function Home ()
                   ]}
                 />
               </div>
-
+ <div className="mt-10">
+                <OrganizationShowcase
+                  name="Footprints In The Sand 2 Recovery"
+                  href="https://www.footprintsinthesand2recovery.com/"
+                  logo={{
+                    src: "/footprints-in-the-sand-minimal-logo.png",
+                    alt: "Footprints In The Sand 2 Recovery logo",
+                  }}
+                  images={[
+                    {
+                      src: "/footprints-building.png",
+                      alt: "Footprints In The Sand 2 Recovery building",
+                    },
+                    {
+                      src: "/footprints-dining.jpg",
+                      alt: "Footprints In The Sand 2 Recovery dining area",
+                    },
+                    {
+                      src: "/footprints-living-area.jpg",
+                      alt: "Footprints In The Sand 2 Recovery living area",
+                    },
+                  ]}
+                />
+              </div>
               <div className="mt-10">
                 <OrganizationShowcase
                   name="True North Recovery"
@@ -517,11 +546,14 @@ export default function Home ()
             </p>
 
             <div className="mt-10 grid gap-5 md:grid-cols-3">
-              {[
+              {[{
+                quote: "Where cultural foundations support growth, healing and renewal. We learn to live healthy",
+
+                  who:"Dominique Bear (Seminole-Creek, Navajo, & Lakota Sioux(Rose Bud))" },
                 {
                   quote:
                     "I felt seen and supported. The experience helped me reconnect with who I am and where I come from.",
-                  who: "Rvfo Spencer",
+                  who: "Rvfo Spencer (Seminole tribe)",
                 },
                 {
                   quote:
