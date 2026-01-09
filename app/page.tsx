@@ -1,9 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
 import OrganizationShowcase from "./components/OrganizationShowcase";
+import { absoluteUrl, LOGO_PATH, SITE_DESCRIPTION, SITE_NAME } from "./seo/site";
 
 export default function Home ()
 {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": absoluteUrl("/#organization"),
+    name: SITE_NAME,
+    url: absoluteUrl("/"),
+    logo: absoluteUrl(LOGO_PATH),
+    description: SITE_DESCRIPTION,
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "Contact",
+        email: "rootedinhealing657@gmail.com",
+        telephone: "+17148051963",
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <a
@@ -64,6 +83,11 @@ export default function Home ()
       </header>
 
       <main id="content">
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <section className="relative overflow-hidden">
           <div
             aria-hidden="true"
