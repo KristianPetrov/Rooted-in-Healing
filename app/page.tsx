@@ -327,6 +327,9 @@ export default function Home ()
                   {
                     src: "/godfather.JPG",
                     alt: "Set Free Anaheim community photo",
+                  },{
+                    src:"/magic-house-crowd.jpg",
+                    alt:"Set Free Anaheim Magic House event crowd photo"
                   },
                   {
                     src: "/phil-sunday-setfree-hat.jpg",
