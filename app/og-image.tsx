@@ -7,13 +7,15 @@ export const contentType = "image/png";
 
 type SocialVariant = "openGraph" | "twitter";
 
-export function getSocialImageSize(variant: SocialVariant) {
+export function getSocialImageSize (variant: SocialVariant)
+{
   return variant === "openGraph"
     ? { width: 1200, height: 630 }
     : { width: 1200, height: 600 };
 }
 
-export async function createSocialImage(variant: SocialVariant) {
+export async function createSocialImage (variant: SocialVariant)
+{
   const { width, height } = getSocialImageSize(variant);
   const logoDataUrl = await readPublicFileAsDataUrl(LOGO_PATH, "image/png");
 

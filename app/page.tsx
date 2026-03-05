@@ -351,18 +351,26 @@ export default function Home ()
                   {
                     src: "/godfather.JPG",
                     alt: "Set Free Anaheim community photo",
+                    fit: "contain",
                   },{
                     src:"/magic-house-crowd.jpg",
-                    alt:"Set Free Anaheim Magic House event crowd photo"
+                    alt:"Set Free Anaheim Magic House event crowd photo",
+                    fit: "contain",
                   },
                   {
                     src: "/phil-sunday-setfree-hat.jpg",
                     alt: "Set Free Anaheim event photo (hat)",
+                    fit: "contain",
                   },
                   {
                     src: "/phil-sunday-magic-side.jpg",
                     alt: "Set Free Anaheim event photo (magic side)",
-                  }, { src: "/sunday-phil-dressed-up.png", alt: "Set Free Anaheim Sunday and Phil event photo (dressed up)" }
+                    fit: "contain",
+                  }, {
+                    src: "/sunday-phil-dressed-up.png",
+                    alt: "Set Free Anaheim Sunday and Phil event photo (dressed up)",
+                    fit: "contain",
+                  }
                 ]}
               />
 
@@ -469,6 +477,30 @@ export default function Home ()
                     {
                       src: "/true-north-staircase.webp",
                       alt: "True North Recovery staircase",
+                    },
+                  ]}
+                />
+              </div>
+              <div className="mt-10">
+                <OrganizationShowcase
+                  name="Empower Retreat Center"
+                  href="https://empowerretreatcenter.com/"
+                  logo={{
+                    src: "/empower-logo.png",
+                    alt: "Empower Retreat Center logo",
+                  }}
+                  images={[
+                    {
+                      src: "/empower-facility.jpg",
+                      alt: "Empower Retreat Center facility exterior",
+                    },
+                    {
+                      src: "/empower-living-room.jpg",
+                      alt: "Empower Retreat Center living room",
+                    },
+                    {
+                      src: "/empowered-inside-view.jpg",
+                      alt: "Empower Retreat Center interior view",
                     },
                   ]}
                 />
