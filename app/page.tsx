@@ -481,7 +481,7 @@ export default function Home ()
                   ]}
                 />
               </div>
-              <div className="mt-10">
+              {/* <div className="mt-10">
                 <OrganizationShowcase
                   name="Empower Retreat Center"
                   href="https://empowerretreatcenter.com/"
@@ -504,7 +504,7 @@ export default function Home ()
                     },
                   ]}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
