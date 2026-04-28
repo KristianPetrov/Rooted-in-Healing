@@ -66,9 +66,7 @@ export default function OrganizationShowcase ({
                     </p>
                 </div>
                 <div className="flex items-center gap-2">
-                    <span className="inline-flex items-center rounded-full border border-border/70 bg-background/60 px-3 py-1 text-xs font-medium text-muted backdrop-blur">
-                        {imageCountLabel}
-                    </span>
+                
                     {href ? (
                         <a
                             href={href}
