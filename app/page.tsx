@@ -197,7 +197,6 @@ export default function Home ()
                     </p>
                   </div>
                 </div>
-
                 <div className="mt-6 rounded-3xl border border-border/70 bg-card p-6">
                   <p className="text-sm font-medium">Your next conversation</p>
                   <p className="mt-2 text-sm text-muted">
@@ -449,6 +448,42 @@ export default function Home ()
                     {
                       src: "/footprints-living-area.jpg",
                       alt: "Footprints In The Sand 2 Recovery living area",
+                    },
+                  ]}
+                />
+              </div>
+              <div className="mt-10">
+                <OrganizationShowcase
+                  name="Renu Healthcare"
+                  href="https://renuhealthrecovery.com/"
+                  logo={{
+                    src: "/renu-health-logo.png",
+                    alt: "Renu Healthcare logo",
+                  }}
+                  images={[
+                    {
+                      src: "/renu-health-front.webp",
+                      alt: "Renu Healthcare facility exterior",
+                    },
+                    {
+                      src: "/renu-health-bedroom.webp",
+                      alt: "Renu Healthcare bedroom",
+                    },
+                    {
+                      src: "/renu-health-bathroom.webp",
+                      alt: "Renu Healthcare bathroom",
+                    },
+                    {
+                      src: "/renu-healthcare-kitchen.webp",
+                      alt: "Renu Healthcare kitchen",
+                    },
+                    {
+                      src: "/renu-health-living-room.webp",
+                      alt: "Renu Healthcare living room",
+                    },
+                    {
+                      src: "/renu-health-shower.webp",
+                      alt: "Renu Healthcare shower",
                     },
                   ]}
                 />
