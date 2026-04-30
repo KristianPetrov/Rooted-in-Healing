@@ -31,52 +31,35 @@ export default async function PayOrderPage({
   const stripe = getStripe();
   const baseUrl = await getBaseUrlFromHeaders();
 
-  const line_items = [
-    ...(order.items ?? []).map((item) => {
-      const name = [
-        item.productName ?? "Item",
-        item.variantLabel ? `(${item.variantLabel})` : null,
-      ]
-        .filter(Boolean)
-        .join(" ");
-
-      const pack =
-        typeof item.tierQuantity === "number" && item.tierQuantity > 1
-          ? `Pack of ${item.tierQuantity}`
-          : undefined;
-
-      const unitPrice = typeof item.tierPrice === "number" ? item.tierPrice : 0;
-      const qty = typeof item.count === "number" && item.count > 0 ? item.count : 1;
-
-      return {
-        price_data: {
-          currency: "usd",
-          product_data: {
-            name,
-            ...(pack ? { description: pack } : {}),
-          },
-          unit_amount: toCents(unitPrice),
-        },
-        quantity: qty,
-      } as const;
-    }),
-  ];
-
-  const shipping =
-    order.shipping_cost && Number(order.shipping_cost) > 0
+  // Stripe Checkout shows line item names to the customer; use a neutral label
+  // so payment UI and receipts read as consulting, not catalog SKUs.
+  const subtotal = Number(order.subtotal);
+  const shippingCost =
+    order.shipping_cost != null && order.shipping_cost !== ""
       ? Number(order.shipping_cost)
       : 0;
+  const total =
+    order.total_amount != null && String(order.total_amount).length > 0
+      ? Number(order.total_amount)
+      : subtotal + shippingCost;
 
-  if (shipping > 0) {
-    line_items.push({
+  if (!Number.isFinite(total) || total <= 0) {
+    throw new Error("Order total is missing or invalid for checkout");
+  }
+
+  const line_items = [
+    {
       price_data: {
         currency: "usd",
-        product_data: { name: "Shipping" },
-        unit_amount: toCents(shipping),
+        product_data: {
+          name: "Consulting",
+          description: "Professional consulting services.",
+        },
+        unit_amount: toCents(total),
       },
       quantity: 1,
-    });
-  }
+    },
+  ];
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
