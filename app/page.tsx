@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import OrganizationShowcase from "./components/OrganizationShowcase";
+import IntakeMultiStepForm from "./components/IntakeMultiStepForm";
 import { absoluteUrl, LOGO_PATH, SITE_DESCRIPTION, SITE_NAME } from "./seo/site";
 
 export default function Home ()
@@ -680,18 +681,16 @@ export default function Home ()
           <div className="mx-auto max-w-6xl px-6 py-16">
             <div className="rounded-3xl border border-border/70 bg-[radial-gradient(circle_at_20%_20%,rgba(176,141,87,0.18),transparent_45%),radial-gradient(circle_at_80%_30%,rgba(111,127,91,0.14),transparent_50%)] p-1">
               <div className="rounded-[22px] bg-card p-8 md:p-10">
-                <div className="grid gap-8 md:grid-cols-12 md:items-center">
-                  <div className="md:col-span-8">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+                  <div className="lg:col-span-5">
                     <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
                       Ready to connect?
                     </h2>
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+                    <p className="mt-3 text-sm leading-relaxed text-muted">
                       Share what you’re seeking. We’ll listen with care and
                       respond with culturally grounded support and next steps.
                     </p>
-                  </div>
-                  <div className="md:col-span-4">
-                    <div className="rounded-3xl border border-border/70 bg-surface p-5">
+                    <div className="mt-8 rounded-3xl border border-border/70 bg-surface p-5">
                       <p className="text-xs uppercase tracking-wide text-muted">
                         Contact
                       </p>
@@ -707,14 +706,16 @@ export default function Home ()
                       >
                         +1 (714) 805-1963
                       </a>
-
                     </div>
                     <a
                       href="mailto:rootedinhealing657@gmail.com?subject=Connect%20-%20Rooted%20in%20Healing"
-                      className="mt-4 inline-flex w-full items-center justify-center rounded-2xl bg-accent px-4 py-2.5 text-sm font-medium text-background ring-1 ring-accent/60 hover:brightness-105"
+                      className="mt-4 inline-flex w-full items-center justify-center rounded-2xl border border-border/80 bg-card px-4 py-2.5 text-sm font-medium text-foreground shadow-sm hover:border-border lg:w-auto"
                     >
                       Email to connect
                     </a>
+                  </div>
+                  <div className="lg:col-span-7">
+                    <IntakeMultiStepForm />
                   </div>
                 </div>
               </div>
