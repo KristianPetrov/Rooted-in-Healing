@@ -14,14 +14,6 @@ export default function Home ()
     url: absoluteUrl("/"),
     logo: absoluteUrl(LOGO_PATH),
     description: SITE_DESCRIPTION,
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        contactType: "Contact",
-        email: "rootedinhealing657@gmail.com",
-        telephone: "+17148051963",
-      },
-    ],
   };
 
   return (
@@ -690,29 +682,10 @@ export default function Home ()
                       Share what you’re seeking. We’ll listen with care and
                       respond with culturally grounded support and next steps.
                     </p>
-                    <div className="mt-8 rounded-3xl border border-border/70 bg-surface p-5">
-                      <p className="text-xs uppercase tracking-wide text-muted">
-                        Contact
-                      </p>
-                      <a
-                        href="mailto:rootedinhealing657@gmail.com"
-                        className="mt-2 block text-sm font-medium text-foreground hover:underline"
-                      >
-                        rootedinhealing657@gmail.com
-                      </a>
-                      <a
-                        href="tel:+17148051963"
-                        className="mt-2 block text-sm font-medium text-foreground hover:underline"
-                      >
-                        +1 (714) 805-1963
-                      </a>
-                    </div>
-                    <a
-                      href="mailto:rootedinhealing657@gmail.com?subject=Connect%20-%20Rooted%20in%20Healing"
-                      className="mt-4 inline-flex w-full items-center justify-center rounded-2xl border border-border/80 bg-card px-4 py-2.5 text-sm font-medium text-foreground shadow-sm hover:border-border lg:w-auto"
-                    >
-                      Email to connect
-                    </a>
+                    <p className="mt-6 text-sm leading-relaxed text-muted">
+                      Please reach out through the intake form first so we can
+                      respond with the right context and care.
+                    </p>
                   </div>
                   <div className="lg:col-span-7">
                     <IntakeMultiStepForm />
