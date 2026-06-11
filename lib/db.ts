@@ -41,7 +41,6 @@ export type DbOrder = {
   subtotal: string;
   shipping_cost: string | null;
   total_amount: string | null;
-  payment_method: string;
 };
 
 export async function getOrderById(orderId: string): Promise<DbOrder | null> {
@@ -56,8 +55,7 @@ export async function getOrderById(orderId: string): Promise<DbOrder | null> {
       items,
       subtotal,
       shipping_cost,
-      total_amount,
-      payment_method
+      total_amount
     from public.orders
     where id = $1
     limit 1`,
